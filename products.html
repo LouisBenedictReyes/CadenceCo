@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+	
+    <style>
+        body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #A0A0A0;
+        }
+		header {
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			background: #000000;
+			color: #ffffff;
+			padding: 20px;
+			font-size: 12px;
+		}
+
+		nav {
+			display: inline-block;
+			margin-top: 10px;	
+				
+		}
+
+		nav a {
+			text-decoration: none;
+			color: #f5f5f5;
+			padding: 8px 12px;
+			margin: 0 10px;
+			border: 1px solid #f5f5f5;
+		}
+
+		nav a img {
+			width: 10px;
+			height: 10px;
+			margin-right: 5px;
+			margin-up: 10px;
+		}
+
+		nav a:hover {
+			background-color: #777;
+		}
+
+		.logo img{
+			width: 350px;
+			height: 100px;
+		}
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .shoe {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .shoe img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .shoe h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .shoe p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .shoe button {
+            background-color:#202020;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .shoe button:hover {
+            background-color: #585858;
+        }
+		a {
+			color: White; /* Default color for links */
+		}
+
+		a:visited {
+			color: White;
+		}
+		
+    </style>
+</head>
+<body>
+    <header>				
+		<div class= "logo">
+			<h2><img src = "C:\Users\user\Desktop\Reyes Final Project WebDes\pic final proj\Cadence co.png" alt = "Cadence co. logo"></h2>
+		</div>
+		<nav>
+			<a href= "index.html">
+				<img src = "https://e7.pngegg.com/pngimages/703/597/png-clipart-logo-house-home-house-angle-building-thumbnail.png" alt= "Home">
+				Home
+			</a>
+			<a href = "products.html"> 
+				<img src = "https://e7.pngegg.com/pngimages/994/129/png-clipart-shopping-cart-logo-shopping-bags-trolleys-shopping-cart-logo-shopping-bags-trolleys-thumbnail.png" alt= "Products">
+				Products
+			</a>
+			<a href = "contactus.html"> 
+				<img src ="https://e7.pngegg.com/pngimages/956/387/png-clipart-round-black-telephone-logo-telephone-icon-phone-file-electronics-logo-thumbnail.png" alt= "contact us">
+				Contact us
+			</a>
+			<a href = "aboutus.html"> 
+				<img src = "https://e7.pngegg.com/pngimages/211/607/png-clipart-computer-icons-information-about-us-miscellaneous-logo-thumbnail.png" alt= "about us">
+				About us
+			</a>
+		</nav>
+    </header>
+	<main>
+		<div class="container">
+			<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/image_aa33effe-02af-4b19-b019-b41cc18b5342_590x.webp?v=1676370622"> <!-- Link to the shoe's details page -->
+            <img src="https://weelz.ouest-france.fr/wp-content/uploads/2022/09/240458029-271925321062662-3657645852791337994-n.jpg" alt="Shoe 2">
+            <h2>Jordan 4 All White SPD </h2>
+            <p>$60</p>
+            <button onclick="addToCart('Jordan 4 All White SPD', 60)">Add to Cart</button>
+        </div>
+				<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/CDGGGGGGGGGGGG_196647a7-aa65-4286-a779-af5ffbafb159_590x.jpg?v=1630840669"> <!-- Link to the shoe's details page -->
+            <img src="https://lesrookies.com/wp-content/uploads/2022/02/243997396_166853178937415_8809301363010603526_n.jpg" alt="Shoe 2">
+            <h2>Nike Dunk High X Fragment “Beijing“ SPD</h2>
+            <p>$60</p>
+            <button onclick="addToCart('Nike Dunk High X Fragment “Beijing“ SPD', 60)">Add to Cart</button>
+        </div>
+			<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/ScreenShot2020-05-14at9.23.54PM_590x.png?v=1589462663"> <!-- Link to the shoe's details page -->
+            <img src="https://bikepacking.com/wp-content/uploads/2022/09/Valcko-SPD-Crocs-20-960x960.jpg" alt="Shoe 2">
+            <h2>Crocs Classic Clogs x Space Jam 2</h2>
+            <p>$60</p>
+            <button onclick="addToCart('Crocs Classic Clogs x Space Jam 2', 60)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/DSGSG_590x.png?v=1671864579"> <!-- Link to the shoe's details page -->
+            <img src="https://bikepacking.com/wp-content/uploads/2022/09/Valcko-SPD-Crocs-26.jpg" alt="Shoe 2">
+            <h2>Crocs Bistro Graphic Slip Resistant Clog SPD</h2>
+            <p>$40</p>
+            <button onclick="addToCart('Crocs Bistro Graphic Slip Resistant Clog SPD', 40)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/Nike-Dunk-Low-Retro-White-Black-2021_1_590x.jpg?v=1610619167"> <!-- Link to the shoe's details page -->
+            <img src="https://bikepacking.com/wp-content/uploads/2022/09/Valcko-SPD-Crocs-24-960x960.jpg" alt="Shoe 2">
+            <h2>BEAMS x Classic All-Terrain Military Clog SPD <br>"Black"</h2>
+            <p>$40</p>
+            <button onclick="addToCart('BEAMS x Classic All-Terrain Military Clog SPD Black', 40)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/image_dfee0653-79ae-4e90-95c9-a5e0094381aa_590x.jpg?v=1652860563"> <!-- Link to the shoe's details page -->
+            <img src="https://bikepacking.com/wp-content/uploads/2022/09/Valcko-SPD-Crocs-22.jpg" alt="Shoe 2">
+            <h2>Crocs Classic All Terrain Camo Clog SPD</h2>
+            <p>$40</p>
+            <button onclick="addToCart('Crocs Classic All Terrain Camo Clog SPD', 40)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/DSADASEA_590x.jpg?v=1626427266"> <!-- Link to the shoe's details page -->
+            <img src="https://bikepacking.com/wp-content/uploads/2022/09/Valcko-SPD-Crocs-21-960x960.jpg" alt="Shoe 2">
+            <h2>Crocs Pollex Clog by Salehe Bembury SPD<br> "Crocodile" </h2>
+            <p>$40</p>
+            <button onclick="addToCart('Crocs Pollex Clog by Salehe Bembury SPD Crocodile', 40)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/files/FullSizeRender_2a4e7fd5-68f4-4737-b6be-20c61c3d6778_590x.jpg?v=1703769377"> <!-- Link to the shoe's details page -->
+            <img src="https://lesrookies.com/wp-content/uploads/2022/02/244132394_560466198545827_4194394186849766122_n.jpg" alt="Shoe 2">
+            <h2>Baya Clog SPD <br> "Black"</h2>
+            <p>$40</p>
+            <button onclick="addToCart('Baya Clog SPD Black', 40)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/TTTTTT_590x.png?v=1648114760"> <!-- Link to the shoe's details page -->
+            <img src="https://weelz.ouest-france.fr/wp-content/uploads/2022/09/235440707-304416091480102-829548288637956554-n.jpg" alt="Shoe 2">
+            <h2>CONS One Star Pro Mid - Ben Raemers Foundation SPD</h2>
+            <p>$40</p>
+            <button onclick="addToCart('CONS One Star Pro Mid - Ben Raemers Foundation SPD', 40)">Add to Cart</button>
+        </div>
+			<!-- Add more shoe items here -->
+		</div>
+	</main>
+
+	<div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center; z-index: 1000;">
+		<div id="modal" style="background-color: white; padding: 20px; border-radius: 5px; position: relative;">
+			<h2>Order Summary</h2>
+			<pre id="orderSummary" style="margin: 10px 0;"></pre>
+			<p>Name:</p>
+			<input type="text" id="customerName" style="margin-bottom: 10px;">
+			<p>Address:</p>
+			<input type="text" id="customerAddress" style="margin-bottom: 10px;">
+			<p>Contact Number:</p>
+			<input type="text" id="customerContact" style="margin-bottom: 10px;">
+			<button id="checkoutButton" onclick="checkout()">Checkout</button>
+			<button id="closeButton" onclick="closeModal()" style="background-color: Black; color: white; margin-left: 10px;">Close</button>
+		</div>
+	</div>
+
+<script>
+	let cart = [];
+
+	function addToCart(name, price) {
+		cart.push({ name: name, price: price });
+		updateCartPreview();
+	}
+
+	function updateCartPreview() {
+		const orderSummaryElement = document.getElementById('orderSummary');
+		orderSummaryElement.textContent = '';
+
+		let totalPrice = 0;
+
+		cart.forEach(item => {
+			orderSummaryElement.textContent += `${item.name}: $${item.price}\n`;
+			totalPrice += item.price;
+		});
+
+		orderSummaryElement.textContent += `\nTotal Price: $${totalPrice}`;
+		showModal();
+	}
+
+	function showModal() {
+		document.getElementById('overlay').style.display = "flex";
+	}
+
+	function closeModal() {
+		document.getElementById('overlay').style.display = "none";
+	}
+
+	function checkout() {
+		const customerName = document.getElementById('customerName').value;
+		const customerAddress = document.getElementById('customerAddress').value;
+		const customerContact = document.getElementById('customerContact').value;
+
+		if (!customerName || !customerAddress || !customerContact) {
+			alert("Please enter your name, address and contact number.");
+			return;
+		}
+
+		let orderSummary = '';
+
+		cart.forEach(item => {
+			orderSummary += `${item.name}: $${item.price}\n`;
+		});
+
+		orderSummary += `\nTotal Price: $${cart.reduce((total, item) => total + item.price, 0)}`;
+		orderSummary += `\nName: ${customerName}`;
+		orderSummary += `\nAddress: ${customerAddress}`;
+		orderSummary += `\nContact Number: ${customerContact}`;
+
+		alert(orderSummary);
+		cart = [];
+		closeModal();
+	}
+</script>
+</body>
+</html>
